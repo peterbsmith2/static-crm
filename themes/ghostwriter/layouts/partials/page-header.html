@@ -1,0 +1,10 @@
+<header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ if .Description }}
+        <p class="post-description">{{ .Description }}</p>
+    {{ end }}
+
+    {{ if .Params.birthday }}
+        <p class="post-description">{{ .Params.birthday }}</p>
+    {{ end }}
+</header>
