@@ -1,0 +1,9 @@
+<section>
+  {{ if .Params.character }}
+  <ul>
+    {{range $index, $element := .Params.character }}
+    <li>{{ $index | title }}: {{ $element }}</li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</section>
